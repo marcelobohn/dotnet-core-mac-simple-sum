@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Holla que tal";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<form  method="get" action="/Home/Ola">
+    <input type="text"  class="form-control" name="primeiro" value="@ViewData["Primeiro"]"> + 
+    <input type="text" class="form-control" name="segundo" value="@ViewData["Segundo"]"> = <br />
+    <input type="text" class="form-control" name="resultado" value="@ViewData["Resultado"]" readonly="readonly">
+    <button class="btn btn-success">Soma</button>
+</form>
+
+<script>
+    <!-- alert(@ViewData["Resultado"]); -->
+</script>
+
+<button onclick="exibe('holla que tal')">mensagem</button>
+
+<p>Olá</p>
